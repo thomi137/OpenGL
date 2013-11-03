@@ -18,6 +18,9 @@
 		B521753818265FE6001488B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B521751718265FE6001488B3 /* Cocoa.framework */; };
 		B521754018265FE6001488B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B521753E18265FE6001488B3 /* InfoPlist.strings */; };
 		B521754218265FE6001488B3 /* Golden_TriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B521754118265FE6001488B3 /* Golden_TriangleTests.m */; };
+		B521754C18265FFB001488B3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B521754B18265FFB001488B3 /* OpenGL.framework */; };
+		B521754F182660A6001488B3 /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B521754E182660A6001488B3 /* MyOpenGLView.m */; };
+		B521755118266508001488B3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B521755018266508001488B3 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		B521753D18265FE6001488B3 /* Golden TriangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Golden TriangleTests-Info.plist"; sourceTree = "<group>"; };
 		B521753F18265FE6001488B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B521754118265FE6001488B3 /* Golden_TriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Golden_TriangleTests.m; sourceTree = "<group>"; };
+		B521754B18265FFB001488B3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B521754D182660A6001488B3 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		B521754E182660A6001488B3 /* MyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenGLView.m; sourceTree = "<group>"; };
+		B521755018266508001488B3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B521755118266508001488B3 /* GLUT.framework in Frameworks */,
+				B521754C18265FFB001488B3 /* OpenGL.framework in Frameworks */,
 				B521751818265FE6001488B3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,8 @@
 		B521751618265FE6001488B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B521755018266508001488B3 /* GLUT.framework */,
+				B521754B18265FFB001488B3 /* OpenGL.framework */,
 				B521751718265FE6001488B3 /* Cocoa.framework */,
 				B521753618265FE6001488B3 /* XCTest.framework */,
 				B521751918265FE6001488B3 /* Other Frameworks */,
@@ -115,6 +126,8 @@
 		B521751D18265FE6001488B3 /* Golden Triangle */ = {
 			isa = PBXGroup;
 			children = (
+				B521754D182660A6001488B3 /* MyOpenGLView.h */,
+				B521754E182660A6001488B3 /* MyOpenGLView.m */,
 				B521752918265FE6001488B3 /* AppDelegate.h */,
 				B521752A18265FE6001488B3 /* AppDelegate.m */,
 				B521752C18265FE6001488B3 /* MainMenu.xib */,
@@ -254,6 +267,7 @@
 			files = (
 				B521752B18265FE6001488B3 /* AppDelegate.m in Sources */,
 				B521752418265FE6001488B3 /* main.m in Sources */,
+				B521754F182660A6001488B3 /* MyOpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
